@@ -19,37 +19,148 @@
   <main>
     <section class="card" id="html-section">
       <h2>HTML</h2>
+      <h3>HTML elements are usually composed of an opening tag and a closing tag represented with angle brackets.</h3>
       <ul>
+        <legend>Meta-Related Elements</legend>
+        <li>Typically not seen by users, but it contains important information about accessibility, search engines, and
+          performance.</li>
+        <li>The !DOCTYPE html declaration is letting the browser know to expect HTML on the page.</li>
+        <li>The HTML opening tag, represents the root, or start, of our HTML document.</li>
+        <li>Inside the html tag is an attribute of lang="en", which tells the browser the language for the webpage.
+        </li>
+        <li>The title element defines the title for a webpage, which is is extremely important for Search Engine
+          Optimization (SEO).</li>
+        <li>The style element defines the CSS styles associated with a website.</li>
+        <li>The base element defines the base URL for a webpage.</li>
+        <li>The link element connects an external resource to the HTML document.</li>
+        <li>The meta element defines metadata such as the character set, description, keywords, author, and viewport.
+          It defines the charset, or character set, as UTF-8, which allows us to use most characters and symbols on the
+          page.</li>
+        <li>The script element embeds client-side scripts in the HTML document.</li>
+      </ul>
+      <ul>
+        <legend>Content Division Elements</legend>
+        <li>The div element creates a division in the page</li>
+        <li>The span element creates an inline division </li>
+        <li>NOTE: It is best practice to use semantic elements whenever possible, especially when the
+          content is visible to users.</li>
+      </ul>
+      <ul>
+        <legend>Semantic Elements </legend>
+        <LI>Makes your HTML easier to read by other developers and the browser.</LI>
         <li>The head element contains information about the webpage.</li>
         <li>The body element represents the visible content shown to the user.</li>
+        <li>The footer appears at the bottom of the page and usually contains the author, copyright, contact, sitemap,
+          and navigation.</li>
+        <li>Elements that are nested inside other elements are called child elements.</li>
+        <li>The h1, h2, h3, h4, h5, and h6 elements represent the level of heading a given text block represents.</li>
+        <li>The p element represents a paragraph or block of text. </li>
+        <li> The ul, ol, and li elements represent unordered lists, ordered lists, and list items. In essence, these
+          HTML elements represent bulleted or numbered lists.</li>
+        <li>The img element contains information about images that are displayed on the webpage. The `src` attribute
+          defines the location of the image file and the `alt` attribute contains a text string that describes the
+          appearance and functionality of the image.</li>
+        <li>The br element creates a line of empty space, or a line break, between two blocks of content.</li>
+        <li>The a element (which stands for anchor) creates links to the same webpage or other webpages. The href
+          attribute points to the URL for the link.</li>
+        <li>The section elemtent defines a section in a document that contains thematic content.</li>
       </ul>
     </section>
 
     <section class="card" id="css-section">
       <h2>CSS</h2>
+      <h3>There are three ways to style a webpage using CSS: inline CSS, internal CSS style sheet, and external CSS
+        style sheet.
+      </h3>
       <ul>
-        <li>A margin indicates how much space we want around the outside of an element.</li>
-        <li>A padding indicates how much space we want around the content inside an element.</li>
+        <legend>Inline CSS</legend>
+        <li>Style an element directly in the HTML file.</li>
+        <li>Inline styles apply to a specific HTML tag, using a style attribute with a CSS rule to style a particular
+          page element only.</li>
+        <li>Useful for quick and permanent changes but are less flexible than external and internal style sheets.</li>
+      </ul>
+      <ul>
+        <legend>Internal CSS Style Sheet</legend>
+        <li>This internal style sheet contains CSS rules for the webpage in the head section of the HTML file.</li>
+        <li>A single change to the CSS rule will apply to all tagged page elements.</li>
+      </ul>
+      <ul>
+        <legend>External CSS Style Sheet</legend>
+        <li>Preferred, in most cases, because it allows developers to keep all their CSS rules in a separate file, which
+          makes design changes easier.</li>
+        <li>When using an external style sheet, we link the file using "link rel="stylesheet" href="./assets/style.css"
+        </li>
+        <li>The rel attribute specifies the relationship between the current document and the linked document resource.
+        </li>
+        <li>CSS Rule: Selector {property:value}</li>
+        <li>The margin property indicates how much space we want around the outside of an element.</li>
+        <li>The padding property indicates how much space we want around the content inside an element.</li>
+        <li>To apply a rule to all the elements visible on the page, use a special wild card symbol, or *.</li>
+        <li>The box-shadow CSS property adds shadow effects around an element's frame.</li>
+        <li>Assigning colors in CSS can be done in many ways, including by semantic references such as gray or blue. We
+          can also refer to a color by its hexadecimal code, or hex #.</li>
       </ul>
     </section>
 
     <section class="card" id="git-section">
       <h2>Git</h2>
+      <h3>Git commands always start with git and are used to save and track versions of your code.</h3>
       <ul>
         <li>git status: checks what branch we are currently on</li>
         <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+        <li>git pull origin main: returns to the main branch</li>
+        <li>git add -A: add change to the branch</li>
+        <li>git commit -m "message": commit to the repository (We use the -m flag to associate a message with our
+          commit)</li>
+        <li>git push origin feature/branch-name: creates a PR in GitHub</li>
+        <li>git clone [SSH key]: clones repository</li>
       </ul>
     </section>
 
     <section class="card" id="javascript-section">
       <h2>JavaScript</h2>
+      <h3>Is a high-level dynamic programming language that allows users to interact with websites.</h3>
       <ul>
-        <li>A variable is a named container that allows us to store data in our code.</li>
+        <li>A variable (var) is a named container that allows us to store data in our code.</li>
+        <li>“=” assignment operator</li>
+        <li>All strings are surrounded by quotation marks.</li>
+        <li>Each line of JavaScript code ends with a semicolon.</li>
+        <li>We can use the console.log method to output a message to the web console by adding an argument.</li>
+        <li>To add js to your application: go to your index.html file, just before the closing body tag, add 'script
+          src="scripts/main.js"'</li>
         <li>Control flow is the order in which a computer executes code in a script.</li>
+      </ul>
+      <ul>
+        <legend>Conditional Statements</legend>
+        <li>We can use conditional statements and loops to control the order in which code is executed, or if it is even
+          executed at all.</li>
+        <li>An if statement is a way of introducing decision-making into our code. If the statement is truthy, then it
+          will do whatever action we ask it to do in between the curly brackets.</li>
+        <li>A value is considered falsy if it is one of the following values: 0, -0, On, "", null, undefined, NaN, or a
+          Boolean data type with the value of false.</li>
+        <li>If the statement is falsy, then the computer will ignore whatever is in between the curly brackets and move
+          on.</li>
+        <li>The strict equality operator (===) checks to see if two values are equal.</li>
+      </ul>
+      <ul>
+        <legend>Loops and Arrays</legend>
+        <li>Array = [ “”, “” ….]</li>
+        <li>Arrays are zero-indexed and sequential. This means that the first item in any array has an index of 0, not
+          1.</li>
+        <li>A for loop uses the predictable pattern of indices to perform a task on all the items in an array by
+          allowing a single code block to be executed over and over.</li>
+        <li>for(var x = 0; x < shapes.length; x++) {the code that we want to be executed for each loop}</li>
+      </ul>
+      <ul>
+        <legend>Function</legend>
+        <li>A function's name is followed by parentheses().</li>
+        <li>Special Math function helps to select a random number. Example: var randomTopic =
+          topics[Math.floor(Math.random() * topics.length)]</li>
+        <li>Math.floor() and Math.random() are both properties of JavaScript's built-in Math object that can be used
+          together to generate a random number.</li>
       </ul>
     </section>
   </main>
-
   <footer>
     <p>I can code!</p>
   </footer>
